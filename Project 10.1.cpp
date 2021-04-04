@@ -23,19 +23,26 @@ bool Search_SQ_Or_QS(const char* s)
 
 int main()
 {
+		
+
 		char str[101];
-	
+
 		ifstream f("t.txt");
-
 		f >> str;
-
 		if (Search_SQ_Or_QS(str))
+		{
+			cout << "Is there a pair of adjacent letters SQ or QS in this file :" << endl;
 			cout << "yes" << endl;
+		}
+			
 		else
+		{
+			cout << "Is there a pair of adjacent letters SQ or QS in this file :" << endl;
 			cout << "no" << endl;
+		}
+			
 
 		f.close();
-
 
 	return 0;
 }
